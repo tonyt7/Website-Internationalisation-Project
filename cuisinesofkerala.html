@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+   <head>
+      <meta charset="utf-8">
+      <title>Kerala Cultural Website</title>
+	  <link rel="icon" type="image/png" href="palm_tree3.png"/>
+      <link rel="stylesheet" href="mystyle.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam:wght@500&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <style>
+  nav{
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background: rgba(1, 33, 105, 0);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  transition: background 0.3s ease;
+}
+.navbar-scrolled {
+  background: #012169; /* Set background color for scrolled navbar */
+  position: fixed;
+  top: 0;
+  width: 100%;
+}	  
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card img {
+  width: 25%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.card-content h3 {
+  margin: 0;
+}
+
+.card-content p {
+  margin: 0;
+}
+#headings{
+
+    padding-left:10%;
+    color:#012169;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 5rem;
+    border-bottom: 5px solid #C8102E;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+
+}
+.headerWrap {
+  background: #ffffff;
+  position: relative;
+}
+
+/* Trying to use this to mask the overflow */
+.headerWrap:after {
+  position: absolute;
+  display: block;
+  content: "";
+  bottom: 0;
+  left: 35%;
+  right: 0;
+  padding-left:10px;
+  border-bottom: 10px solid #ffffff;
+}
+
+.header {
+  margin: 0 auto 24px;
+  text-align: left;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 10px;
+  color: #012169;
+  border-bottom: 2px solid #C8102E;
+  position: relative;
+}
+
+.header:before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  margin-bottom: 2px;
+  content: "";
+  border-bottom: 6px solid #C8102E;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; /* Adjust gap between cards as needed */
+  padding: 0 20px; /* Add padding to create white space on the left and right ends */
+  max-width: 1200px; /* Set maximum width of card container */
+  margin: 0 auto; /* Center the card container */
+}
+.card:hover {
+  box-shadow: 0 4px 6px rgba(200, 16, 46, 0.3);
+}
+.link-text {
+  
+  color: #012169; 
+  cursor: pointer;
+  text-decoration: none; /* Remove underline */
+}
+
+.link-text:hover {
+  
+  color: #C8102E; /* Change to desired hover color */
+}
+a {
+  text-decoration: none; /* Remove underline */
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease-in-out;
+  position: relative;
+}
+
+
+.card-image {
+  flex: 0 0 35%;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card-content {
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-content h3 {
+  margin-top: 10px;
+}
+
+.card-content p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.card-title {
+  font-size: 20px; /* Set font size for card title */
+  margin-bottom: 10px; /* Add margin between title and description */
+}
+
+.card-description {
+  font-size: 16px; /* Set font size for card description */
+  color: #777; /* Set color for card description */
+}
+
+	</style>  
+   </head>
+
+   <body style="margin: 0; padding: 0;">
+   <header style="background-color: transparent; position: absolute; z-index: 2; width: 100%; top: 0; left: 0;">
+      <nav id="navbar">
+	  
+         <div class="logo" style="font-family: 'Noto Serif Malayalam', serif; font-size:10px">
+		 <img src="image2.png" style="filter: invert(97%) sepia(30%) saturate(342%) hue-rotate(139deg) brightness(103%) contrast(109%);" alt="Logo" width="100" height="80">
+                       കേരള സംസ്കാരം.......
+					   
+         </div>
+         <input type="checkbox" id="click" />
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a  href="Fyptest2.html">Home</a></li>
+            <li><a href="Historyofkerala.html">History</a></li>
+            <li><a href="festivalofkerala.html">Festivals</a></li>
+            <li><a href="artformofkerala.html">Artforms</a></li>
+            <li><a class="active">Cuisines</a></li>
+			<li><a href="wheninkerala.html">When in Kerala </a></li>
+            <li><a href='#'>Souvenir</a></li>
+		    
+		 </ul>
+      </nav>
+	  </header>
+	  	  <div style="width: 100%; height:550px; background-color:#FF7F50;" >
+         
+  
+            <img id="history" src="cuisines.jpg" width ="100%" height="550px" alt="CuisinesofKerala">
+        	 
+</div>
+<script>
+window.addEventListener('scroll', function() {
+  var navbar = document.getElementById('navbar');
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > 0) {
+    navbar.classList.add('navbar-scrolled'); // Add the class when scrolled down
+  } else {
+    navbar.classList.remove('navbar-scrolled'); // Remove the class when scrolled to top
+  }
+});
+</script>
+
+
+	   	
+	   <marquee style="color:#ffffff;font-weight: bold;background-color:#484848;
+ border-width: thick;
+ border-style: inset;
+ border-color: #FF7F50;
+ padding: 2px;">Cuisines of Kerala </marquee>
+ <br> </br>
+ <div class="headerWrap">
+ <h2 class="header" style="margin-left:10%;">Breakfast Dishes</h2>  
+ 
+ </div>
+ <div class="card-container">
+  <div class="card">
+    <div class="card-image">
+      <img src="appamstew.jpg" alt="Image 1"> 
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Appam & Stew</h3> 
+      <p class="card-description">The very mention of Appam and Chicken Stew brings a smile to every Malayali’s face. This combination is now famous across the world with the crispy yet delicate Appam, dipped in a hot and spicy chicken, mutton, beef or vegetable broth, becoming a staple representative of Kerala cuisine<div class="learn-more">
+     <a href="https://www.keralatourism.org/kerala-food/appam-chicken-stew/88">
+	  <span class="link-text">Recipe  </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="idiappam.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Idiyappam & Egg Curry</h3> 
+      <p class="card-description">Most Keralites swear that the Idiappam and Egg Roast combination can go up against any breakfast cuisine from anywhere else on the planet. The steamed Idiappam, famous for its delicate texture, and the delicious broth of the traditionally cooked egg roast, take one’s taste buds on a wild ride that one must not miss at any cost</p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/idiappam-egg-roast/89">
+      <span class="link-text">Recipe </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="puttu.jpg" alt="Image 1"> 
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Puttu & Chickpeas Curry</h3>
+      <p class="card-description">Visit any Malayali household across the world and chances are that you'll see delicious Puttu and Kadala Curry being served for breakfast. The aroma itself is mesmerising and by the time the first mouthful of soft puttu and spicy kadala (Black Chickpea) curry melts in your mouth, you will be transported to another dimension altogether. </p>
+	<div class="learn-more">
+	<a href="https://www.keralatourism.org/kerala-food/puttu-kadala/43">
+      <span class="link-text">Recipe  </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="kappa.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Tapioca & Fish</h3>
+      <p class="card-description">Tapioca is a common dish in Kerala and we prepare this in many ways like stir fry, chips and as a main course. The delicate flavor of Kappa (tapioca) along with generous helpings of spicy and flavorful Fish Curry has been a favorite for ages.The boiled Kappa soaks in the masala mix of the fish and makes for a sumptuous meal.</p>
+	  <div class="learn-more">
+	  <a href="https://www.pachakam.com/recipes/kappa-meen-curry-fish-curry">
+      <span class="link-text">Recipe </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="idili.jpg" alt="Image 1">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Idili & Sambar</h3>
+      <p class="card-description">Idli is one the famous and the healthy breakfast of Kerala in from south Indian cuisines. These are made with lentils and server with chutney or with a Sambar. This healthy food is safe for everyone even with people having poor digestion. The reason for being easily digestible is because its prepared with the fermented batter that improves the nutrients and helping with easy the digestion of the food.
+	  </p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/iddli-breakfast-dish/168">
+      <span class="link-text">Recipe </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="upma.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Upma & Banana</h3>
+      <p class="card-description">Upma is a flavorful, tasty, savory and popular South Indian breakfast that is made with cream of wheat or semolina flour (called rava or suji), a few lentils, nuts, vegetables, herbs and spices.This traditional dish involves cooking roasted rava in water that has been flavored by ghee (or oil), cashews, urad dal (white lentils), chana dal (husked and split bengal gram), onion, ginger and additional herbs and spices.</p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/rava-upma/170">
+      <span class="link-text">Recipe </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div>
+  <!-- Add more cards as needed -->
+</div>
+ <br>
+ <div class="headerWrap">
+ <h2 class="header" style="margin-left:10%;"> Lunch & Dinner Specialities</h2>
+ </div>
+ <div class="card-container">
+  <div class="card">
+    <div class="card-image">
+      <img src="sadya.jpg" alt="Image 1"> sadya
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Ela Sadya</h3> 
+      <p class="card-description">Ela Sadya is a grand vegetarian feast that epitomizes the rich cultural heritage of Kerala. It is a multi-course meal served on a banana leaf, featuring an array of traditional dishes like parippu curry, sambar, avial, thoran, and more. Ela Sadya is known for its diverse flavors, colorful presentation, and the use of locally available ingredients, making it a truly special and celebratory meal in Kerala cuisine</p>
+	  <div class="learn-more">
+     <a href="https://experiencekerala.in/kerala-tourism-blog/kerala-onam-sadhya/">
+	  <span class="link-text">Recipe  </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="riceandfish.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Rice & Fish Curry</h3> 
+      <p class="card-description">Brown rice and fish curry is a wholesome and nutritious dish that reflects the traditional way of eating in Kerala. Brown rice, known for its health benefits, is cooked to perfection and paired with a flavorful fish curry made with locally caught fish and aromatic spices. The combination of the nutty brown rice and tangy fish curry creates a unique and satisfying taste that is loved by locals and visitors alike.</p>
+	  <div class="learn-more">
+	  <a href="https://www.yummytummyaarthi.com/kottayam-style-fish-curry-recipe-kerala/#recipe">
+      <span class="link-text">Recipe </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="biriyani.jpg" alt="Image 1"> 
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Thalassery Biriyani</h3>
+      <p class="card-description">Thalassery Biryani is a famous dish from the Malabar region of Kerala and is known for its distinct flavors and fragrant aroma. Made with fragrant Jeerakasala rice, tender meat (usually chicken or mutton), and a blend of spices, Thalassery Biryani is cooked in layers, resulting in a flavorful and aromatic dish. The use of unique spices sets Thalassery Biryani apart from other biryanis. </p>
+	<div class="learn-more">
+	<a href="https://www.indianhealthyrecipes.com/thalassery-chicken-biryani-recipe/">
+      <span class="link-text">Recipe  </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="kappabiriyani.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Tapioca Biryani</h3>
+      <p class="card-description">Kappa Biriyani is a unique and traditional dish from Kerala that features tapioca (kappa) cooked with spices, coconut, and sometimes fish. The tapioca is boiled and then sautéed with spices, onion, and coconut to create a delicious and filling dish. A local favorite, Kappa Biriyani is a must-try for those seeking to experience the distinctiveness of Kerala cuisine.</p>
+	  <div class="learn-more">
+	  <a href="https://www.yummyoyummy.com/2011/04/kappa-biriyani-tapioca-biriyani.html">
+      <span class="link-text">Recipe </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="porotta.jpg" alt="Image 1">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Poratta & Beef Fry</h3>
+      <p class="card-description">Porotta and beef fry is a classic combination in Kerala cuisine, often enjoyed as a special treat during festive occasions or gatherings. Porotta, a flaky and layered flatbread, is paired with tender and flavorful beef fry cooked with spices and herbs. The crispy and buttery texture of porotta complements the rich and aromatic flavors of the beef fry, creating a mouthwatering and indulgent dish that is loved by meat lovers in Kerala.</p>
+	  <div class="learn-more">
+	  <a href="https://cookpad.com/uk/recipes/11322445-kerala-style-beef-fry-with-malabar-paratha">
+      <span class="link-text">Recipe </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="beefcurry.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Kerala Style Beef Curry</h3>
+      <p class="card-description">Kerala style beef curry is a quintessential dish in Kerala cuisine, known for its rich and robust flavors. Tender pieces of beef are marinated with spices and cooked slowly in a blend of coconut, spices, and curry leaves, resulting in a flavorful and aromatic curry. The unique combination of spices, herbs, and coconut gives Kerala style beef curry its distinct taste, making it a beloved dish in the region.</p>
+	  <div class="learn-more">
+	  <a href="https://dwellbymichelle.com/kerala-beef-curry/">
+      <span class="link-text">Recipe </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="muttoncurry.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Mutton Curry</h3>
+      <p class="card-description">Kerala style mutton curry is a traditional dish made with succulent pieces of mutton cooked in a blend of spices and coconut. The slow-cooking process allows the flavors to meld together, creating a rich and flavorful curry that is often enjoyed with rice or bread in Kerala. The use of aromatic spices and coconut, along with the tender meat, makes Kerala style mutton curry a special dish that is savored by meat lovers in the region.</p>
+	  <div class="learn-more">
+	  <a href="https://www.yummyntasty.com/recipes/nadan-mutton-curry/">
+      <span class="link-text">Recipe </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div><div class="card">
+    <div class="card-image">
+      <img src="roti.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Roti & Chicken Fry</h3>
+      <p class="card-description">Roti & Chicken Fry is a simple and delicious dish that is popular in Kerala. The dish is made with soft and fluffy rotis, which are served alongside tender and spicy chicken fry. The chicken is typically marinated in a variety of spices and slow-cooked until it is tender and flavorful, making it the perfect accompaniment to the buttery and fluffy rotis.</p>
+	  <div class="learn-more">
+	  <a href="https://www.kothiyavunu.com/2016/04/thattukada-chicken-fry-kozhi-porichathu/">
+      <span class="link-text">Recipe </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div><div class="card">
+    <div class="card-image">
+      <img src="fishmolee.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Kerala Style Fish Molee</h3>
+      <p class="card-description">A creamy and flavorful fish curry made with coconut milk, spices, and fresh fish. A Kerala specialty that combines the richness of coconut with the delicate flavors of fish, creating a delicious and comforting dish that is loved by seafood enthusiasts.</p>
+	  <div class="learn-more">
+	  <a href="https://www.tastesofmalabar.com/recipe/fish-molly-kerala-style-fish-molee/">
+      <span class="link-text">Recipe </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div>
+  <!-- Add more cards as needed -->
+</div>
+ 
+ <div class="headerWrap">
+ <h2 class="header" style="margin-left:10%;"> Snacks & Delights</h2>
+ </div>
+ <br>
+ <div class="card-container">
+  <div class="card">
+    <div class="card-image">
+      <img src="payasam.jpg" alt="Image 1"> 
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Payasam</h3> 
+      <p class="card-description">Indulge in the heavenly sweetness of Payasam, a traditional Kerala dessert made with rice, lentils, or vermicelli cooked in rich, creamy milk, and sweetened with aromatic jaggery or sugar. Flavored with cardamom, saffron, and loaded with nuts, Payasam is a luscious treat that will leave you craving for more during festive celebrations or special occasions.
+	
+	  </p>
+	  <div class="learn-more">
+     <a href="https://www.archanaskitchen.com/semiya-payasam-semiya-kheer-recipe">
+	  <span class="link-text">Recipe  </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="pazampori.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Pazham Pori</h3> 
+      <p class="card-description">Crispy, golden-brown and oh-so-delicious! Pazham Pori, also known as Ethakka Appam, is a tempting snack made from ripe plantains dipped in a sweet batter made with flour, sugar, and fragrant cardamom. Bite into the crispy exterior and savor the soft, sweet interior of the ripe plantains, and you'll be hooked to this delectable Kerala snack.
+	  </p>
+	  <div class="learn-more">
+	  <a href="https://www.tastycircle.com/recipe/pazham-pori/">
+      <span class="link-text">Recipe </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="neyappam.jpg" alt="Image 1"> 
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Neyyappam</h3>
+      <p class="card-description">Get ready to tantalize your taste buds with Neyyappam, a traditional Kerala delicacy that is pure bliss! Made with a luscious blend of rice flour, jaggery, ghee (clarified butter), and aromatic spices, deep-fried until golden brown, Neyyappam boasts a rich, melt-in-your-mouth texture and a heavenly sweetness that will leave you craving for more.
+	  </p>
+	  <div class="learn-more">
+	<a href="https://www.tastycircle.com/recipe/neyyappam/">
+      <span class="link-text">Recipe  </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="uniappam.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Unniyappam</h3>
+      <p class="card-description">Sweet, tangy, and oh-so-irresistible! Unniyappam is a small, round snack that packs a punch of flavors. Made with rice flour, jaggery, bananas, and grated coconut, and deep-fried until crispy, Unniyappam is a delightful combination of sweet, tangy, and aromatic notes that will transport your taste buds to culinary heaven.
+	  </p>
+	  <div class="learn-more">
+	  <a href="https://www.vegrecipesofindia.com/unniyappam-recipe/">
+      <span class="link-text">Recipe </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="aluva.jpg" alt="Image 1">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Halwa</h3>
+      <p class="card-description"> Treat yourself to the royal indulgence of Kozhikodan Halwa, a legendary sweet treat from Kozhikode, Kerala! This sticky, jelly-like dessert is made from wheat flour, ghee, sugar, and nuts, and boasts a rich, luxurious taste and a unique, chewy texture that will leave you craving for more of this iconic delicacy.
+	  </p>
+	  <div class="learn-more">
+	  <a href="https://www.plattershare.com/recipe/kozhikode-halwa/">
+      <span class="link-text">Recipe </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="achappam.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Achappam</h3>
+      <p class="card-description">Delight in the intricate, lacy beauty of Achappam, also known as Rose Cookies or Fried Rosettes! This traditional deep-fried snack made from rice flour, coconut milk, and sugar, flavored with cardamom, is a visual and culinary treat. With its unique, lacy texture and fragrant, sweet flavors, Achappam is a snack that will leave you mesmerized.
+	  </p>
+	  <div class="learn-more">
+	  <a href="https://recipes.timesofindia.com/recipes/achappam/rs58221296.cms">
+      <span class="link-text">Recipe </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="kozukatta.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Kozhukatta</h3>
+      <p class="card-description"> Get ready to relish the delightful flavors of Kozhukatta, a steamed dumpling filled with a scrumptious mixture of grated coconut and jaggery, flavored with cardamom. Soft, chewy, and bursting with sweet, coconutty goodness, Kozhukatta is a treat for your taste buds that will leave you wanting more.
+	  </p>
+	  <div class="learn-more">
+	  <a href="https://mariasmenu.com/desserts/kozhukatta">
+      <span class="link-text">Recipe </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div><div class="card">
+    <div class="card-image">
+      <img src="bananachips.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Banana Chips</h3> 
+      <p class="card-description">Crispy, savory, and irresistibly addictive! Banana Chips are thin slices of raw or ripe bananas deep-fried until golden and seasoned with salt and spices. With their satisfying crunch, savory taste, and natural sweetness of bananas, Banana Chips are a beloved snack in Kerala that will keep you reaching for more.
+	  </p>
+	  <div class="learn-more">
+	  <a href="https://hebbarskitchen.com/homemade-banana-chips-recipe/">
+      <span class="link-text">Recipe </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div><div class="card">
+    <div class="card-image">
+      <img src="mixture.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Kerala Mixture</h3> 
+      <p class="card-description">Prepare your taste buds for an explosion of flavors with Kerala Mixture! This fiery and savory snack is a tantalizing blend of fried or roasted lentils, crunchy nuts, and aromatic spices. Each bite delivers a burst of bold and spicy flavors that will leave you craving for more. 
+	  </p>
+	  <div class="learn-more">
+	  <a href="https://hebbarskitchen.com/south-indian-kerala-mixture-recipe/">
+      <span class="link-text">Recipe </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="paripuvada.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Parippu Vada</h3>
+      <p class="card-description">Crispy, golden-brown, and full of flavor, Parippu Vada is a beloved Kerala snack that will make your taste buds dance with joy! Made from a spiced lentil batter mixed with onions, ginger, and curry leaves, these deep-fried lentil fritters are a perfect combination of crunchy texture and irresistible taste, making them an all-time favorite for tea-time snacking.
+	  </p>
+	  <div class="learn-more">
+	  <a href="https://www.tastycircle.com/recipe/parippu-vada/">
+      <span class="link-text">Recipe </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div>
+  <!-- Add more cards as needed -->
+</div>
+  <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+<script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+  
+  <div
+  data-skyscanner-widget="SearchWidget"
+  data-locale="en-GB"
+  data-market="UK"
+  data-currency="GBP"
+  data-font-colour="#012169"
+  data-responsive="true"
+  data-arrow-icon="true"
+  data-colour="#C8102E"
+  data-powered-by-logo-colour="dark"
+  data-origin-name="London"
+  data-destination-name="Kochi"
+  data-button-colour="#012169"
+></div>
+  
+  <div class="footer-section">
+        <div class="footer-item">
+            <h2 style="font-family: 'Noto Serif Malayalam', serif;">കേരള സംസ്കാരം.......</h2>
+            <p><a href=""> About Us</a></p>
+            <p><a href=""> Contact Us</a></p>
+            <p><a href=""> Our Services</a></p>
+            <p><a href=""> Privacy Policy</a></p>
+        </div>
+        <div class="footer-item">
+            <h2>Get Help </h2>
+            <p><a href=""> FAQ</a></p>
+            <p><a href=""> Festivals </a></p>
+            <p><a href=""> Places to Visit in Kerala </a></p>
+            <p><a href=""> Places to Visit nearby  </a></p>
+        </div>
+        <div class="footer-item">
+            <h2>Cuisines</h2>
+            <p><a href=""> Breakfast </a></p>
+            <p><a href=""> Lunch </a></p>
+            <p><a href=""> Dinner </a></p>
+            <p><a href=""> Snacks </a></p>
+        </div>
+        <div class="footer-item social" >
+            <h2> Follow Us </h2>
+            <ul style="font-size: 20px;">
+                <li> <i class="fa fa-instagram"></i> </li>
+                <li> <i class="fa fa-linkedin"></i> </li>
+                <li> <i class="fa fa-youtube"></i> </li>
+                <li> <i class="fa fa-twitter"></i> </li>
+            </ul>
+        </div>
+    </div>
+   </body>
+</html>

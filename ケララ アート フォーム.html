@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+   <head>
+      <meta charset="utf-8">
+      <title>ケララ文化</title>
+	  <link rel="icon" type="image/png" href="palm_tree3.png"/>
+      <link rel="stylesheet" href="mystyle1.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam:wght@500&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	  nav{
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background: rgba(1, 33, 105, 0);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  transition: background 0.3s ease;
+}
+.navbar-scrolled {
+  background: #BC002D; /* Set background color for scrolled navbar */
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.card {
+  display: flex;
+  margin: 10px;
+  flex-direction: row;
+  width: 100%;
+  height:250px;
+  border: 5px solid #BC002D;
+  border-radius: 25px;
+}
+
+.card img {
+  width: 25%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.card2 {
+  display: flex;
+  margin: 10px;
+  flex-direction: row;
+  width: 100%;
+  height:250px;
+  border: 5px solid #BC002D;
+  border-radius: 25px;
+}
+.card2 img {
+  width: 25%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.card-content h3 {
+  margin: 0;
+  color:#BC002D;
+}
+.card-content p {
+  margin: 0;
+  color:#BC002D;
+}
+
+.card-content2 p {
+  margin: 0;
+  color:#BC002D;
+}
+.card-content2 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.card-content2 h3 {
+  margin: 0;
+  color:#BC002D;
+}
+.card button {
+ border: 0;
+ background: #BC002D;
+ color: #ffffff;
+ font-family: inherit;
+ padding: 10px 10px;
+ font-size: 16px;
+ border-radius: 20px;
+ width:15%;
+ }
+ .card2 button {
+ border: 0;
+ background: #BC002D;
+ color: #ffffff;
+ font-family: inherit;
+ padding: 10px 10px;
+ font-size: 16px;
+ border-radius: 20px;
+ width:15%;
+
+ }
+
+.slideshow-container {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+	</style>  
+   </head>
+
+   <body style="margin: 0; padding: 0;">
+   <header style="background-color: transparent; position: absolute; z-index: 2; width: 100%; top: 0; left: 0;">
+      <nav id="navbar">
+	  
+         <div class="logo" style="font-family: 'Noto Serif Malayalam', serif; font-size:10px">
+		 <img src="image2.png" style="filter: invert(97%) sepia(30%) saturate(342%) hue-rotate(139deg) brightness(103%) contrast(109%);" alt="Logo" width="100" height="80">
+                       കേരള സംസ്കാരം.......
+					   
+         </div>
+         <input type="checkbox" id="click" />
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a  href="Fyptest2.html">Home</a></li>
+            <li><a href="Historyofkerala.html">History</a></li>
+            <li><a href="festivalofkerala.html">Festivals</a></li>
+            <li><a class="active">Artforms</a></li>
+            <li><a href="cuisinesofkerala.html">Cuisines</a></li>
+			<li><a href='#'>When in Kerala </a></li>
+            <li><a href='#'>Souvenir</a></li>
+		    
+		 </ul>
+      </nav>
+	  </header>
+       <video style = "background-color: #000000;" width="100%" height="500px" autoplay muted loop>
+       <source src="artform.mp4" type="video/mp4">
+       </video>
+<script>
+window.addEventListener('scroll', function() {
+  var navbar = document.getElementById('navbar');
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > 0) {
+    navbar.classList.add('navbar-scrolled'); // Add the class when scrolled down
+  } else {
+    navbar.classList.remove('navbar-scrolled'); // Remove the class when scrolled to top
+  }
+});
+</script>
+	   	
+	   <marquee style="color:#000000;font-weight: bold;background-color:#ffffff;
+ border-width: thick;
+ border-style: inset;
+ border-color: #000000;
+ padding: 2px;">Artforms of Kerala </marquee>
+ 
+ <div class="card">
+  <img src="kathakali.jpg" alt="Image">
+  <div class="card-content">
+    <h3>Kathakali</h3>
+    <p>Kathakali is a major form of classical Indian dance. It is a "story play" genre of art, but one distinguished by the elaborately colourful make-up and costumes of the traditional male actor-dancers.It is native to the southwestern region of Kerala and is almost entirely practiced and appreciated by Malayali people.</p>
+	<button onclick="window.location.href='https://www.keralatourism.org/artforms/kathakali-kerala-theatre/15'"> Learn more</button>
+  </div>
+</div>
+<div class="card2">
+  <img src="theyam.jpg" alt="Image">
+  <div class="card-content2">
+    <h3>Theyam</h3>
+    <p>Theyyam are Hindu ritualistic dance forms practiced in northern Kerala and some parts of Karnataka. Theyyam is also known as Kaḷiyāṭṭaṁ or Tiṟa. Theyyam consists of traditions, rituals and customs associated with temples and sacred groves of Malabar.The people of the region consider Theyyam itself as a channel to a god and they thus seek blessings from Theyyam.</p>
+	<button onclick="window.location.href='https://www.keralatourism.org/artforms/theyyam-ritual/1'"> Learn more</button>
+  </div>
+</div>
+<div class="card">
+  <img src="kalaripayitu.jpg" alt="Image">
+  <div class="card-content">
+    <h3>Kalaripayitu</h3>
+    <p>Kalaripayattu is an Indian martial art that originated in modern-day Kerala, a state on the southwestern coast of India.Kalaripayattu is known for its long-standing history within Indian martial arts, and is one of the oldest surviving martial arts in India.Kalaripayattu is mentioned in the Vadakkan Pattukal, a collection of ballads written about the Chekavar of the Malabar region of Kerala.In the Vadakkan Pattukal, it is stated that the cardinal principle of Kalaripayattu was that knowledge of the art be used to further worthy causes, and not for the advancement of one's own selfish interests.</p>
+	<button onclick="window.location.href='https://www.keralatourism.org/artforms/kalaripayattu-martial-art-kerala/27"> Learn more</button>
+  </div>
+</div>
+<div class="card2">
+  <img src="pulikali.jpg" alt="Image">
+  <div class="card-content2">
+    <h3>Pulikali</h3>
+    <p>Puli kali (Meaning: Leopard Dance) is a recreational folk art from the state of Kerala, India.It is performed by trained artists to entertain people on the occasion of Onam, an annual harvest festival, celebrated mainly in the Indian state of Kerala.On the fourth day of Onam celebrations (Naalaam Onam or Vishakham), performers painted like tigers and leopards in bright yellow, red, and black shake their bellies and dance to the beats of instruments like Udukku and Thakil. Literal meaning of Pulikkali is 'The tiger dance' hence the performance revolve around the theme of tiger hunting. Folk art is mainly practiced in Thrissur district of Kerala.</p>
+	<button onclick="window.location.href='https://www.keralatourism.org/event/pulikali/40'">Learn more</button>
+  </div>
+</div>
+<div class="card">
+  <img src="thiruvathirakali.jpg" alt="Image">
+  <div class="card-content">
+    <h3>Thiruvathirakali</h3>
+    <p>Thiruvathirakali is a unique group dance of women in Kerala.The dance is performed by women in small groups, both as part of and apart from religious rituals.Generally on Onam and Thiruvathira day in the month of Dhanumas, women perform this art form by singing the praises of Shiva Parvati in Shiva temples etc. Tiruvathirakali is considered a must especially for women who observe Thiruvathira vradam.This art form is also known as Kaikottikali and Kummikali with slight variations. This dance is believed to bring a long and auspicious married life and marriage of choice. This play is performed at night on Thiruvathira day. The first Thiruvathira after the marriage of girls is called Poothiruvathira.</p>
+	<button onclick="window.location.href='https://www.keralatourism.org/artforms/thiruvathirakali/21'">Learn more</button>
+  </div>
+</div>
+<div class="card2">
+  <img src="panchavadyam.jpg" alt="Image">
+  <div class="card-content2">
+    <h3>Panchavadyam</h3>
+    <p>Panchavadyam,literally meaning an orchestra of five instruments, is basically a temple art form that has evolved in Kerala. Of the five instruments, four - timila, maddalam, ilathalam and idakka belong to the percussion category, while the fifth one, kombu, is a wind instrument.
+Much like any chenda melam, panchavadyam too is characterised by a pyramid-like rhythmic structure—with a constantly increasing tempo coupled with a proportional decrease in the number of beats in cycles. </p>
+	<button onclick="window.location.href='https://www.keralatourism.org/kerala-article/2011/traditional-orchestras/134'">Learn more</button>
+  </div>
+</div>
+<div class="card">
+  <img src="mohiniattam.jpg" alt="Image">
+  <div class="card-content">
+    <h3>Mohiniattam</h3>
+    <p>Mohiniyattam is an Indian classical dance form that developed and remained popular in the state of Kerala.Mohiniyattam dance gets its name from the word Mohini – a historical enchantress avatar of the Hindu God Vishnu, who helps the good prevail over evil by developing her feminine powers.
+
+Mohiniyattam's roots, like all classical Indian dances, are in the Natya Shastra – the ancient Hindu Sanskrit text on performance arts.However, it follows the Lasya style described in Natya Shastra, that is a dance which is delicate, eros-filled and feminine.It is traditionally a solo dance performed by women after extensive training, though nowadays men can also perform the dance.</p>
+	<button onclick="window.location.href='https://www.keralatourism.org/kerala-article/2010/mohiniyattam-classical-dance/81'"> Learn More</button>
+</div>
+</div>
+<div class="card2">
+  <img src="margamkali.jpg" alt="Image">
+  <div class="card-content2">
+    <h3>Margamkali</h3>
+    <p>"Margam" means path or way or solution in Malayalam, but in the religious context it is known as the path to attain salvation. The process of conversion to Christianity was known as "Margam Koodal" until recently in Kerala.Much of this folk art is woven around the mission of St. Thomas, the Apostle. The original Margam Kali describes the arrival of St. Thomas in Malabar, the miracles he performed, the friendship as well as the hostility of the people among whom he worked, the persecution he suffered, the churches and crosses he put up in various places, etc. These details are incorporated in the various stanzas of the Margam Kali songs. Kerala's Margam Kali is an important element in the age-old and hallowed tradition of St Thomas among the Syrian Christians of Malabar Coast.</p>
+	<button onclick="window.location.href='https://www.keralatourism.org/christianity/margam-kali/36'">Learn more</button>
+  </div>
+</div>
+<div class="card">
+  <img src="oppanna.jpg" alt="Image">
+  <div class="card-content">
+    <h3>Oppanna</h3>
+    <p>Oppana is a popular form of social entertainment among the Mappila (Kerala Muslims) community of Kerala, South India, prevalent throughout Kerala, especially in Malabar.The term Oppana is believed to be originated from the Arabic word "Affna".Oppana is traditionally used in various important cultural ceremonies, and in particular, is a component of all Mappila weddings. In Kerala, this art form has been revived with much popularity on the performing stages of the Youth Festivals of the student community.
+Oppana is generally presented by females, numbering about fifteen, including musicians, on a wedding day. </p>
+	<button onclick="window.location.href='https://www.keralatourism.org/malabar/oppana/6'">Learn more</button>
+  </div>
+</div>
+ <script>
+ 
+  var video = document.querySelector('video');
+  video.currentTime = 90;
+ 
+ </script>
+ 
+ 
+  <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+<script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+  
+   <div
+  data-skyscanner-widget="SearchWidget"
+  data-locale="en-GB"
+  data-market="UK"
+  data-currency="GBP"
+  data-font-colour="#BC002D"
+  data-responsive="true"
+  data-arrow-icon="true"
+  data-colour="#FFFFFF"
+  data-powered-by-logo-colour="dark"
+  data-origin-name="London"
+  data-destination-name="Kochi"
+  data-button-colour="#BC002D"
+style="
+ border-color:#000000 ;
+ border-width: thick;
+ border-style: inset;
+ padding: 2px;"></div>
+  
+  <div class="footer-section">
+        <div class="footer-item">
+            <h2 style="font-family: 'Noto Serif Malayalam', serif;">കേരള സംസ്കാരം.......</h2>
+            <p><a href=""> About Us</a></p>
+            <p><a href=""> Contact Us</a></p>
+            <p><a href=""> Our Services</a></p>
+            <p><a href=""> Privacy Policy</a></p>
+        </div>
+        <div class="footer-item">
+            <h2>Get Help </h2>
+            <p><a href=""> FAQ</a></p>
+            <p><a href=""> Festivals </a></p>
+            <p><a href=""> Places to Visit in Kerala </a></p>
+            <p><a href=""> Places to Visit nearby  </a></p>
+        </div>
+        <div class="footer-item">
+            <h2>Cuisines</h2>
+            <p><a href=""> Breakfast </a></p>
+            <p><a href=""> Lunch </a></p>
+            <p><a href=""> Dinner </a></p>
+            <p><a href=""> Snacks </a></p>
+        </div>
+        <div class="footer-item social" >
+            <h2> Follow Us </h2>
+            <ul style="font-size: 20px;">
+                <li> <i class="fa fa-instagram"></i> </li>
+                <li> <i class="fa fa-linkedin"></i> </li>
+                <li> <i class="fa fa-youtube"></i> </li>
+                <li> <i class="fa fa-twitter"></i> </li>
+            </ul>
+        </div>
+    </div>
+   </body>
+</html>

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+   <head>
+      <meta charset="utf-8">
+      <title>Kerala Cultural Website</title>
+	  <link rel="icon" type="image/png" href="palm_tree3.png"/>
+      <link rel="stylesheet" href="mystyle.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam:wght@500&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <style>
+#backg {
+  background: rgb(248,232,127);
+background: linear-gradient(90deg, rgba(248,232,127,0.8352591036414566) 17%, rgba(194,192,6,0.6699929971988796) 100%); background-repeat: no-repeat;
+  background-size: cover;
+   min-height: 100vh;
+}
+nav{
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background: rgba(1, 33, 105, 0);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  transition: background 0.3s ease;
+}
+.navbar-scrolled {
+  background: #012169; /* Set background color for scrolled navbar */
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+	  
+article {
+  --img-scale: 1.001;
+  --title-color: black;
+  --link-icon-translate: -20px;
+  --link-icon-opacity: 0;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: none;
+  background: #fff;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+article a::after {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0;
+  cursor: pointer;
+  content: "";
+}
+
+/* basic article elements styling */
+article h2{
+  margin: 0 0 18px 0;
+  font-family:system-ui;
+  color:#C8102E;
+  transition: color 0.3s ease-out;
+}
+article p{
+  
+  font-family:system-ui;
+  color:#C8102E;
+  
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+article img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+
+.article-body {
+  padding: 24px;
+}
+
+article a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #28666e;
+}
+
+article a:focus {
+  outline: 1px dotted #28666e;
+}
+
+article a .icon {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  transform: translateX(var(--link-icon-translate));
+  opacity: var(--link-icon-opacity);
+  transition: all 0.3s;
+}
+
+/* using the has() relational pseudo selector to update our custom properties */
+article:has(:hover, :focus) {
+  --img-scale: 1.1;
+  --title-color: #28666e;
+  --link-icon-translate: 0;
+  --link-icon-opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+/************************ 
+Generic layout (demo looks)
+**************************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Figtree", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+ 
+  min-height: 100vh;
+}
+
+.articles {
+  display: grid;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+@media screen and (max-width: 960px) {
+  article {
+    container: card/inline-size;
+  }
+  .article-body p {
+    display: none;
+  }
+}
+
+@container card (min-width: 380px) {
+  .article-wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+  }
+  .article-body {
+    padding-left: 0;
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  figure img {
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+.slideshow-container {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.read-more {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Center the button horizontally */
+  font-weight: bold;
+  color: #012169;
+}
+.line{
+ 
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 40px; /* Adjust the padding as needed */
+  width: 100%;
+  height: 2px;
+  background-color: #012169; /* Use your desired color here */
+  z-index: 1;/* Add this line to place the line above the button */
+}
+.mySlides {
+  display: none;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+ 
+ 
+
+	</style>  
+   </head>
+
+   <body style="margin: 0; padding: 0;">
+   <header style="background-color: transparent; position: absolute; z-index: 2; width: 100%; top: 0; left: 0;">
+      <nav id="navbar">
+	  
+         <div class="logo" style="font-family: 'Noto Serif Malayalam', serif; font-size:10px">
+		 <img src="image2.png" style="filter: invert(97%) sepia(30%) saturate(342%) hue-rotate(139deg) brightness(103%) contrast(109%);" alt="Logo" width="100" height="80">
+                       കേരള സംസ്കാരം.......
+					   
+         </div>
+         <input type="checkbox" id="click" />
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a  href="Fyptest2.html">Home</a></li>
+            <li><a href="Historyofkerala.html">History</a></li>
+            <li><a class="active">Festivals</a></li>
+            <li><a href="artformofkerala.html">Artforms</a></li>
+            <li><a href="#">Cuisines</a></li>
+			<li><a href='#'>When in Kerala </a></li>
+            <li><a href='#'>Souvenir</a></li>
+		    
+		 </ul>
+      </nav>
+	  </header>
+	  	  
+         <div class="slideshow-container" style="position: relative; z-index: 1;">
+         <img src="festival3.jpg" class="mySlides">
+         <img src="festival2.jpg" class="mySlides">
+         <img src="festival5.jpg" class="mySlides">
+		 <img src="festival4.jpg" class="mySlides">
+		 <img src="festival1.jpg" class="mySlides">
+		 <img src="festival6.jpg" class="mySlides">
+
+</div>
+<script>
+window.addEventListener('scroll', function() {
+  var navbar = document.getElementById('navbar');
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > 0) {
+    navbar.classList.add('navbar-scrolled'); // Add the class when scrolled down
+  } else {
+    navbar.classList.remove('navbar-scrolled'); // Remove the class when scrolled to top
+  }
+});
+</script>
+
+	   <div id="backg">	
+	   <marquee style="color:#C8102E;font-weight: bold;background-color:#f8e87f;
+ border-width: thick;
+ border-style: groove;
+ border-color: #C8102E;
+ padding: 2px;">Festivals of Kerala </marquee>
+ 
+ 
+ <section class="articles">
+  <article>
+    <div class="article-wrapper">
+      <figure>
+        <img src="onam.jpg" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>Onam</h2>
+        <p>
+          Onam is a festival celebrated by Malayalis in Kerala or in any other part of the world to mark the homecoming of the Great King Mahabali. It is also said to mark the harvest season for Kerala. The festival lasts for ten days and is celebrated with a great splendour
+        </p>
+        <div class="line"></div>
+		<a href="https://www.keralatourism.org/onam-festival" class="read-more">
+          Read more <span class="sr-only">about this is some title</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </article>
+  <article>
+
+    <div class="article-wrapper">
+      <figure>
+        <img src="thrissurpooram.jpg" alt="kathakali" />
+      </figure>
+      <div class="article-body">
+        <h2>Thrissur pooram</h2>
+        <p>
+          The Thrissur Pooram is an annual Hindu temple festival held in Thrissur, Kerala, India. It is held at the Vadakkunnathan (Shiva) Temple in Thrissur every year on the Pooram day—the day when the moon rises with the Pooram star in the Malayalam Calendar month of Medam.</p><br>
+       <div class="line"></div>
+	   <a href="https://www.keralatourism.org/event/thirssur-pooram/7" class="read-more">
+          Read more <span class="sr-only">about this is some title</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </article>
+  <article>
+
+    <div class="article-wrapper">
+      <figure>
+        <img src="vishu.jpg" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>Vishu</h2>
+        <p>Vishu celebrates the vernal equinox, when day and night are roughly equal length. Although the astronomical equinox falls in late March, the Vishu festival falls on the first day of the Malayali month of Medam, which occurs on either April 14 or 15 on the Gregorian calendar
+          </p>
+		<br>
+		<div class="line"></div>
+        <a href="http://keralatourism.guide/festivals/vishu" class="read-more">
+          Read more <span class="sr-only">about this is some title</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </article>
+  <article>
+    <div class="article-wrapper">
+      <figure>
+        <img src="pongala.jpg">
+      </figure>
+      <div class="article-body">
+        <h2>Attukal Pongala</h2>
+        <p>
+          Attukal Pongala is a 10-day religious festival celebrated at the Attukal Bhagavathy Temple in Thiruvananthapuram in the Indian state of Kerala. On the ninth day there is a huge gathering of millions of women on the temple surroundings. These women prepare a divine food made of rice in earthen pots and offer it to the Attukal Amma (Goddess of the Temple). </p><br>
+        <div class="line"></div>
+		<a href="https://www.keralatourism.org/event/attukal-pongala-festival/30" class="read-more">
+          Read more <span class="sr-only">about this is some title</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </article>
+  <article>
+
+    <div class="article-wrapper">
+      <figure>
+        <img src="christmas.jpg" />
+      </figure>
+      <div class="article-body">
+        <h2>Christmas</h2>
+        
+		<p>
+		Christmas is a celebration marking the birth of Christ.Families prepare for Christmas weeks in advance by making traditional Christmas wine and maturing dry fruits and nuts for the Christmas plum cake. Irrespective of religion, houses are decorated with a Christmas star and most Christian families will also have a Christmas tree, crib and decorative lights.
+          </p>
+		<br>
+        <div class="line"></div>
+		<a href="https://www.tourmyindia.com/states/kerala/christmas-festival.html" class="read-more">
+          Read more <span class="sr-only">about this is some title</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </article>
+  <article>
+
+    <div class="article-wrapper">
+      <figure>
+        <img src="Makaravilakku.jpg" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>Makaravilakku Festival</h2>
+        <p>
+          Makaravilakku is an annual festival held on Makara Sankranti in Kerala, India at the shrine of Sabarimala. The festival includes the Thiruvabharanam (sacred ornaments of Lord Ayyappan) procession and a congregation at the hill shrine of Sabarimala.</p>
+        <div class="line"></div>
+		<a href="https://en.wikipedia.org/wiki/Makaravilakku" class="read-more">
+          Read more <span class="sr-only">about this is some title</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </article>
+  <article>
+    <div class="article-wrapper">
+      <figure>
+        <img src="eid.jpg">
+      </figure>
+      <div class="article-body">
+        <h2>Eid ul Fitr</h2>
+        <p>
+          Eid ul Fitr or the feast of breaking the fast is an important festival celebrated by Muslims across the world to mark the end of Ramadan fasting. It is celebrated on the first day of Shawaal to conclude the month long fasting during Ramadan. Eid means happiness which literary means breaking the fast which is celebrated with great fervor and enthusiasm.</p><br>
+        <div class="line"></div>
+		<a href="https://www.keralatourism.org/event/eid-ul-fitr/36" class="read-more">
+          Read more <span class="sr-only">about this is some title</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </article>
+  <article>
+
+    <div class="article-wrapper">
+      <figure>
+        <img src="ambalapuzha.jpg" alt="kathakali" />
+      </figure>
+      <div class="article-body">
+        <h2>Ambalapuzha Arattu</h2>
+        <p>
+         Ambalapuzha Arattu is a famous festival conducted at Sree Krishnaswamy temple in Ambalapuzha in Alappuzha District or Kerala. This Temple was built by a local ruler Chembakasserry Pooradam Thirunal-Devanarayanan Thampuran somewhere between the 15th and 17th century and dedicated his state to Lord Krishna who is the presiding deity here and since its inception Ambalapuzha arattu is conducted as the main festival here every year.</p><br>
+        <div class="line"></div>
+		<a href="http://keralatourism.guide/festivals/ambalapuzha-arattu" class="read-more">
+          Read more <span class="sr-only">about this is some title</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </article>
+  <article>
+
+    <div class="article-wrapper">
+      <figure>
+        <img src="boatrace.jpg" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>Aranmula Uthrattathi</h2>
+        <p>
+        The Aranmula Boat Race the oldest river boat festival in Kerala, the south western State of India is held during Onam (August–September). It takes place at Aranmula, near Sri Parthasarady Temple dedicated to Lord Krishna and Arjuna in Pathanamthitta district of Kerala State. The snake boats move in pairs to the rhythm of full-throated singing and shouting watched by an exciting crowd.</p>
+		<br>
+        <div class="line"></div>
+		<a href="https://www.keralatourism.org/event/aranmula-vallamkali/34" class="read-more">
+          Read more <span class="sr-only">about this is some title</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </article>
+</section> 
+<br>
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ <script>
+ 
+ let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+ 
+ </script>
+ 
+ 
+  <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+<script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+  
+  <div
+  data-skyscanner-widget="SearchWidget"
+  data-locale="en-GB"
+  data-market="UK"
+  data-currency="GBP"
+  data-font-colour="#012169"
+  data-responsive="true"
+  data-arrow-icon="true"
+  data-colour="#C8102E"
+  data-powered-by-logo-colour="dark"
+  data-origin-name="London"
+  data-destination-name="Kochi"
+  data-button-colour="#012169"
+></div>
+  
+  <div class="footer-section">
+        <div class="footer-item">
+            <h2 style="font-family: 'Noto Serif Malayalam', serif;">കേരള സംസ്കാരം.......</h2>
+            <p><a href=""> About Us</a></p>
+            <p><a href=""> Contact Us</a></p>
+            <p><a href=""> Our Services</a></p>
+            <p><a href=""> Privacy Policy</a></p>
+        </div>
+        <div class="footer-item">
+            <h2>Get Help </h2>
+            <p><a href=""> FAQ</a></p>
+            <p><a href=""> Festivals </a></p>
+            <p><a href=""> Places to Visit in Kerala </a></p>
+            <p><a href=""> Places to Visit nearby  </a></p>
+        </div>
+        <div class="footer-item">
+            <h2>Cuisines</h2>
+            <p><a href=""> Breakfast </a></p>
+            <p><a href=""> Lunch </a></p>
+            <p><a href=""> Dinner </a></p>
+            <p><a href=""> Snacks </a></p>
+        </div>
+        <div class="footer-item social" >
+            <h2> Follow Us </h2>
+            <ul style="font-size: 20px;">
+                <li> <i class="fa fa-instagram"></i> </li>
+                <li> <i class="fa fa-linkedin"></i> </li>
+                <li> <i class="fa fa-youtube"></i> </li>
+                <li> <i class="fa fa-twitter"></i> </li>
+            </ul>
+        </div>
+    </div>
+   </body>
+</html>

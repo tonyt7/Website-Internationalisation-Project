@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+   <head>
+      <meta charset="utf-8">
+      <title>ケララ文化</title>
+	  <link rel="icon" type="image/png" href="palm_tree3.png"/>
+      <link rel="stylesheet" href="mystyle1.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam:wght@500&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <style>
+  nav{
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background: rgba(1, 33, 105, 0);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  transition: background 0.3s ease;
+}
+.navbar-scrolled {
+  background: #BC002D; /* Set background color for scrolled navbar */
+  position: fixed;
+  top: 0;
+  width: 100%;
+}	  
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card img {
+  width: 25%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.card-content h3 {
+  margin: 0;
+}
+
+.card-content p {
+  margin: 0;
+}
+#headings{
+
+    padding-left:10%;
+    color:#012169;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 5rem;
+    border-bottom: 5px solid #BC002D;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+
+}
+.headerWrap {
+  background: #ffffff;
+  position: relative;
+}
+
+/* Trying to use this to mask the overflow */
+.headerWrap:after {
+  position: absolute;
+  display: block;
+  content: "";
+  bottom: 0;
+  left: 35%;
+  right: 0;
+  padding-left:10px;
+  border-bottom: 10px solid #ffffff;
+}
+
+.header {
+  margin: 0 auto 24px;
+  text-align: left;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 10px;
+  color: #BC002D;
+  border-bottom: 2px solid #BC002D;
+  position: relative;
+}
+
+.header:before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  margin-bottom: 2px;
+  content: "";
+  border-bottom: 6px solid #BC002D;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; /* Adjust gap between cards as needed */
+  padding: 0 20px; /* Add padding to create white space on the left and right ends */
+  max-width: 1200px; /* Set maximum width of card container */
+  margin: 0 auto; /* Center the card container */
+}
+.card:hover {
+  box-shadow: 0 4px 6px rgba(200, 16, 46, 0.3);
+}
+.link-text {
+  
+  color: #BC002D; 
+  cursor: pointer;
+  text-decoration: none; /* Remove underline */
+}
+
+.link-text:hover {
+  
+  color: #000000; /* Change to desired hover color */
+}
+a {
+  text-decoration: none; /* Remove underline */
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease-in-out;
+  position: relative;
+}
+
+
+.card-image {
+  flex: 0 0 35%;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card-content {
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-content h3 {
+  margin-top: 10px;
+  color: #BC002D;
+}
+
+.card-content p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.card-title {
+  font-size: 20px; /* Set font size for card title */
+  margin-bottom: 10px; /* Add margin between title and description */
+}
+
+.card-description {
+  font-size: 16px; /* Set font size for card description */
+  color: #777; /* Set color for card description */
+}
+
+	</style>  
+   </head>
+
+   <body style="margin: 0; padding: 0;">
+   <header style="background-color: transparent; position: absolute; z-index: 2; width: 100%; top: 0; left: 0;">
+      <nav id="navbar">
+	  
+         <div class="logo" style="font-family: 'Noto Serif Malayalam', serif; font-size:10px">
+		 <img src="image2.png" style="filter: invert(97%) sepia(30%) saturate(342%) hue-rotate(139deg) brightness(103%) contrast(109%);" alt="Logo" width="100" height="80">
+                       കേരള സംസ്കാരം.......
+					   
+         </div>
+         <input type="checkbox" id="click" />
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a  href="Fyptest2.html">Home</a></li>
+            <li><a href="Historyofkerala.html">History</a></li>
+            <li><a href="festivalofkerala.html">Festivals</a></li>
+            <li><a href="artformsofkerala.html">Artforms</a></li>
+            <li><a href="cuisinesofkerala.html">Cuisines</a></li>
+			<li><a class="active">When in Kerala </a></li>
+            <li><a href='wheninuk.html'>Souvenir</a></li>
+		    
+		 </ul>
+      </nav>
+	  </header>
+       <video style = "background-color: #000000;width:100%; height:auto;" autoplay muted loop playsinline>
+       <source src="kerala.webm" style="width: 100%; height: 500px;" type="video/webm">
+	   Your browser does not support the video tag
+       </video>
+	   
+	   <marquee style="color:#000000;font-weight: bold;background-color:#ffffff;
+ border-width: thick;
+ border-style: inset;
+ border-color: #000000;
+ padding: 2px;">Kerala Tourism</marquee>
+ 
+ 
+ <br> </br>
+ <div class="headerWrap">
+ <h2 class="header" style="margin-left:10%;">All Activities</h2>  
+ 
+ </div>
+ <div class="card-container">
+  <div class="card">
+    <div class="card-image">
+      <img src="backwaters.jpg" alt="Image 1"> 
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Allepy Backwater Cruise</h3> 
+      <p class="card-description">Experience the tranquility and charm of Kerala's famous backwaters with a cruise through Alleppey's picturesque canals. Float along in a traditional houseboat, surrounded by lush greenery and serene waters, as you soak in the breathtaking beauty of the backwaters and immerse yourself in the unique local culture. </p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/appam-chicken-stew/88">
+	  <span class="link-text">Book now  </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="autorickshaw.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Private Auto-Rickshaw Tour</h3> 
+      <p class="card-description">Explore the streets of Kerala like a local with a private auto rickshaw tour! Hop on a colorful auto rickshaw and embark on a thrilling ride through bustling markets, narrow alleys, and hidden corners of the city, as you discover the local way of life, interact with friendly locals, and uncover the hidden gems of the destination.</p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/idiappam-egg-roast/89">
+      <span class="link-text">Book now </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="fortcochin.jpg" alt="Image 1"> 
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Guided Walking tour Fort Kochi/ Mattancherry</h3>
+      <p class="card-description">Step back in time with a guided walking tour of historic Fort Kochi. Wander through the winding streets lined with colonial-era buildings, ancient churches, and charming cafes, as your knowledgeable guide regales you with fascinating stories of the city's rich heritage, diverse cultures, and remarkable landmarks.</p>
+	 <div class="learn-more">
+	<a href="https://www.keralatourism.org/kerala-food/puttu-kadala/43">
+      <span class="link-text">Book now  </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="munnar.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Munnar Tea Garden Tour</h3>
+      <p class="card-description">Immerse yourself in the scenic beauty of Munnar's lush tea gardens with a guided tour. Witness the mesmerizing sight of rolling hills covered in a carpet of vibrant green tea plantations, learn about the tea-making process, and sample some freshly brewed tea while taking in the breathtaking panoramic views of the picturesque landscape.</p>
+	  <div class="learn-more">
+	  <a href="https://www.pachakam.com/recipes/kappa-meen-curry-fish-curry">
+      <span class="link-text">Book now </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="fortkathak.jpg" alt="Image 1">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Fort Cochin Entrance and Kathakali Dance</h3>
+      <p class="card-description">Delight your senses with a cultural extravaganza in Fort Kochi. Witness a mesmerizing Kathakali dance performance, a traditional classical dance-drama of Kerala, showcasing colorful costumes, intricate makeup, and electrifying performances. Immerse yourself in the captivating world of Kathakali, an art form that combines dance, music, and storytelling.
+	  </p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/iddli-breakfast-dish/168">
+      <span class="link-text">Book now </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="ayurveda.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Ayurveda Treatment and Rejuvenation</h3>
+      <p class="card-description">U Indulge in the ancient healing traditions of Ayurveda with a rejuvenating treatment. Relax, rejuvenate, and pamper yourself with a range of Ayurvedic therapies, massages, and treatments that are designed to balance your body, mind, and spirit. Experience the therapeutic benefits of Ayurveda and embark on a journey of holistic wellness.</p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/rava-upma/170">
+      <span class="link-text">Book now </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="waterfalls.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Athirapally Waterfalls excursion</h3>
+      <p class="card-description">Witness the awe-inspiring beauty of Athirappally Waterfalls, also known as the "Niagara of India." Trek through lush forests, listen to the thundering roar of the waterfalls, and bask in the refreshing mist as you immerse yourself in the breathtaking natural beauty of this spectacular waterfall, one of the largest in Kerala.</p> <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/rava-upma/170">
+      <span class="link-text">Book now </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="fishnets.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Chinese Fishing Nets Tour</h3>
+      <p class="card-description">Get a glimpse of the unique fishing culture of Kerala with a tour of the iconic Chinese fishing nets. Watch local fishermen in action as they cast their massive nets into the waters, learn about the history and traditional techniques of these intriguing fishing nets, and capture some Instagram-worthy moments against the picturesque backdrop of the Arabian Sea.</p><div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/rava-upma/170">
+      <span class="link-text">Book now </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div>
+  <!-- Add more cards as needed -->
+</div>
+
+<br> </br>
+ <div class="headerWrap">
+ <h2 class="header" style="margin-left:10%;">Top Sights</h2>  
+ 
+ </div>
+ <div class="card-container">
+  <div class="card">
+    <div class="card-image">
+      <img src="periyar.jpg" alt="Image 1"> 
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Periyar National Park</h3> 
+      <p class="card-description">Embark on a thrilling wildlife adventure at Periyar National Park, home to elephants, tigers, leopards, and more. Explore the lush greenery, go on a boat safari, and spot exotic wildlife in their natural habitat. </p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/appam-chicken-stew/88">
+	  <span class="link-text">Explore now  </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="kovalam.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Kovalam Beach</h3> 
+      <p class="card-description">Relax on the golden sands of Kovalam Beach, one of the most famous beaches in Kerala. Enjoy sunbathing, swimming, and water sports, and immerse yourself in the laid-back beach vibes while savoring delicious seafood. </p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/idiappam-egg-roast/89">
+      <span class="link-text">Explore now </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="thekkaddy.jpg" alt="Image 1"> 
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Thekaddy</h3>
+      <p class="card-description">Discover the wilderness of Thekkady, known for its spice plantations and Periyar Tiger Reserve. Go for a thrilling jungle trek, enjoy an elephant safari, or indulge in a spice plantation tour, and experience the beauty of nature up close.</p>
+	  <div class="learn-more">
+	<a href="https://www.keralatourism.org/kerala-food/puttu-kadala/43">
+      <span class="link-text">Explore now  </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="vagamon.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Vagamon Hill Station</h3>
+      <p class="card-description">Escape to the serene beauty of Vagamon, a peaceful hill station nestled amidst mist-covered valleys and verdant meadows. Enjoy panoramic views, go for nature walks, and experience the tranquility of this idyllic hill retreat.</p>
+	  <div class="learn-more">
+	  <a href="https://www.pachakam.com/recipes/kappa-meen-curry-fish-curry">
+      <span class="link-text">Explore now </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="calicut.jpg" alt="Image 1">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Kozhikode</h3>
+      <p class="card-description">Dive into the rich history and culture of Kozhikode, a coastal city known for its beautiful beaches, ancient temples, and bustling markets. Explore the historic Kozhikode Beach, savor local delicacies, and experience the warm hospitality of the locals.
+	  </p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/iddli-breakfast-dish/168">
+      <span class="link-text">Explore now </span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="astamudi.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Astamudi Lake</h3>
+      <p class="card-description">Cruise along the tranquil waters of Ashtamudi Lake, the second-largest lake in Kerala, on a traditional houseboat. Marvel at the scenic beauty, spot unique bird species, and experience the serenity of the backwaters.<div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/rava-upma/170">
+      <span class="link-text">Explore now </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="malampuzha.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Malampuzha Dam</h3>
+      <p class="card-description">Visit the picturesque Malampuzha Dam, a popular picnic spot known for its lush gardens, scenic surroundings, and boating options. Enjoy a leisurely stroll, take in the panoramic views, and capture beautiful moments amidst nature.
+	  </p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/rava-upma/170">
+      <span class="link-text">Explore now </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="idukkidam.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Idukki Dam</h3>
+      <p class="card-description">Marvel at the engineering marvel of Idukki Dam, one of the highest arch dams in Asia, nestled amidst picturesque hills. Enjoy panoramic views, visit the nearby wildlife sanctuary, and appreciate the scenic beauty of the region.
+	  </p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/rava-upma/170">
+      <span class="link-text">Explore now </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="poovar.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Poovar</h3>
+      <p class="card-description">Embark on a tranquil journey to Poovar Island, a beautiful backwater destination located at the southern tip of Kerala. Explore the pristine beaches, enjoy a boat cruise, and immerse yourself in the serenity of the island.
+	  </p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/rava-upma/170">
+      <span class="link-text">Explore now</span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="guruvayur.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Guruvayoor Temple</h3>
+      <p class="card-description">Experience the spiritual essence of Kerala at Guruvayur Temple, one of the most famous Hindu temples in South India. Witness the grandeur of the temple architecture, participate in religious rituals, and soak in the divine aura of this revered pilgrimage site.
+	  </p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/rava-upma/170">
+      <span class="link-text">Explore now </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="jatayu.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Jatyu Earth Reserve</h3>
+      <p class="card-description">Visit the unique Jatayu Earth Reserve, a colossal sculpture of a mythical bird set amidst scenic hills. Enjoy adventure activities like rock climbing and ziplining, marvel at the intricate artwork, and learn about local folklore.</p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/rava-upma/170">
+      <span class="link-text">Explore now </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="kuttanad.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Kuttanad</h3>
+      <p class="card-description">Explore the picturesque backwater region of Kuttanad, often referred to as the "Rice Bowl of Kerala." Cruise along the serene backwaters, witness the unique farming practices, and experience the rustic charm of this idyllic countryside.</p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/rava-upma/170">
+      <span class="link-text">Explore now </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="varkala.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Varkala Beach</h3>
+      <p class="card-description">Relax and rejuvenate at the pristine Varkala Beach, known for its stunning cliffs, golden sands, and clear blue waters. Enjoy sunbathing, swimming, and Ayurvedic treatments, and soak in the tranquil vibes of this scenic beach destination.
+	  </p>
+	 <div class="learn-more">
+	 <a href="https://www.keralatourism.org/kerala-food/rava-upma/170">
+      <span class="link-text">Explore now </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="lulumall.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Lulu Mall</h3>
+	  <p class="card-description"> Indulge in a shopping spree at Lulu Mall, one of the largest shopping malls in India. Shop for local handicrafts, branded merchandise, and enjoy a range of entertainment options</p>
+<div class="learn-more">
+<a href="https://www.keralatourism.org/kerala-food/rava-upma/170">
+      <span class="link-text">Explore now </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="folklore.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Folklore Museum</h3>
+      <p class="card-description">Get a glimpse of the unique fishing culture of Kerala with a tour of the iconic Chinese fishing nets. Watch local fishermen in action as they cast their massive nets into the waters, learn about the history and traditional techniques of these intriguing fishing nets, and capture some Instagram-worthy moments against the picturesque backdrop of the Arabian Sea.</p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/rava-upma/170">
+      <span class="link-text">Explore now </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div>
+  <!-- Add more cards as needed -->
+</div>
+
+<br> </br>
+ <div class="headerWrap">
+ <h2 class="header" style="margin-left:10%;">Recommended Food Places</h2>  
+ 
+ </div>
+  <div class="card-container">
+  <div class="card">
+    <div class="card-image">
+      <img src="indiancofee.jpg" alt="Image 1"> 
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Indian Coffee House</h3> 
+      <p class="card-description">Indian Coffee House is one of the oldest restaurant chains in Kerala. And, if you live in or visit Trivandrum, it is a must-visit place. The filter coffee served here is refreshing. You can also order some dosa and idli here.</p>
+	  <h4> Speciality: </h4><p class="card-description"> Filter coffee, Idili and Dosa</p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/appam-chicken-stew/88">
+	  <span class="link-text">Central Road, Trivandrum</span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="grandpav.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Grand Pavilion</h3> 
+      <p class="card-description">As we talk about Kerala food paradises, we cannot just miss out on mentioning Grand Pavilion. It is one of the oldest food eateries in Kochi where you can order some of the most delectable dishes like Karimeen Pollichathu, Biriyani, Seafood, etc. You will also get various Syrian food options here.</p>
+	  <h4> Speciality: </h4><p class="card-description">Karimeen Pollichathu, Biriyani & Seafood</p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/idiappam-egg-roast/89">
+      <span class="link-text">Ernakulam,Kochi</span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="Kethel.jpg" alt="Image 1"> 
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Kethel's Chicken</h3>
+      <p class="card-description">If you have heard about Kerala’s fried chicken, you must visit Kethal’s Chicken. They have been serving since 1949 and is one of the most sought after restaurants now in Trivandrum. Try chicken fry with chapatti here.</p>
+	  <h4> Speciality: </h4><p class="card-description">Chicken fry with chapati</p>
+	  <div class="learn-more">
+	<a href="https://www.keralatourism.org/kerala-food/puttu-kadala/43">
+      <span class="link-text">Rahamaniya Lane, Trivandrum</span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="shala.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Shala Restaurant</h3>
+      <p class="card-description">If you miss home-cooked food, you can head to Shala Restaurant without a second thought. The chefs of this restaurant are the local housewives, who cook authentic home-style Kerala food. Some of the special dishes here are kingfish steak and Malabar prawn curry.</p>
+	  <h4> Speciality: </h4><p class="card-description">Kingfish steak and Malabar prawn curry</p>
+	  <div class="learn-more">
+	  <a href="https://www.pachakam.com/recipes/kappa-meen-curry-fish-curry">
+      <span class="link-text">Peter Celli Street, Kochi</span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="rehmat.jpg" alt="Image 1">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Rahmathullah Hotel</h3>
+      <p class="card-description">If you are looking for the best biryani in Kerala, you must visit Rahmathullah Hotel. Operating since 1948, Rahmathullah Hotel is a favorite restaurant of many in Kochi, especially the biryani lovers. They offer a wide variety of biryani; however, some of them are served on specific days of the week.</p>
+	  <h4> Speciality: </h4><p class="card-description">Fish Biriyani and Prawn Biriyani</p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/iddli-breakfast-dish/168">
+      <span class="link-text">Aanavaadal,Kochi</span>
+      <span>&gt;</span>
+	  </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="rapsy.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Rapsy Restaurant</h3>
+      <p class="card-description">We all try to avoid eating out at the end of the month, but if you feel like munching some good food during those days, you can visit Rapsy Restaurant. Dishes like biryani and Rapsy’s special paratha start at just Rs 50. Are you already making your plan to visit Rapsy now?
+	  </p>
+	  <h4> Speciality: </h4><p class="card-description">Biriyani and Rapsy's special paratha</p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/rava-upma/170">
+      <span class="link-text">Main Bazaar,Munnar</span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="annapoorna.jpg" alt="Image 2">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title">Hotel Annapoorna</h3>
+      <p class="card-description">Kerala is famous for dishes like prawn curry, seafood chemmeen curry, etc. However, if you are a vegetarian, you do not have to feel bad, as there are multiple vegetarian options as well. From puttu to masala dosa, and even idli, you can order any vegetarian dish here, and you will get it.</p>
+	  <h4> Speciality: </h4><p class="card-description">Prawn curry & Seafood</p>
+	  <div class="learn-more">
+	  <a href="https://www.keralatourism.org/kerala-food/rava-upma/170">
+      <span class="link-text">Perumbavoor,Kerala </span>
+	 
+      <span>&gt;</span>
+	   </a>
+    </div>
+    </div>
+  </div>
+  </div>
+<script>
+
+window.addEventListener('scroll', function() {
+  var navbar = document.getElementById('navbar');
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > 0) {
+    navbar.classList.add('navbar-scrolled'); // Add the class when scrolled down
+  } else {
+    navbar.classList.remove('navbar-scrolled'); // Remove the class when scrolled to top
+  }
+});
+
+ 
+  var video = document.querySelector('video');
+  video.currentTime = 90;
+ 
+ </script>
+ 
+ 
+<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+<script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+  
+ <div
+  data-skyscanner-widget="SearchWidget"
+  data-locale="en-GB"
+  data-market="UK"
+  data-currency="GBP"
+  data-font-colour="#BC002D"
+  data-responsive="true"
+  data-arrow-icon="true"
+  data-colour="#FFFFFF"
+  data-powered-by-logo-colour="dark"
+  data-origin-name="London"
+  data-destination-name="Kochi"
+  data-button-colour="#BC002D"
+style="
+ border-color:#000000 ;
+ border-width: thick;
+ border-style: inset;
+ padding: 2px;"></div>
+  
+  <div class="footer-section">
+        <div class="footer-item">
+            <h2 style="font-family: 'Noto Serif Malayalam', serif;">കേരള സംസ്കാരം.......</h2>
+            <p><a href=""> About Us</a></p>
+            <p><a href=""> Contact Us</a></p>
+            <p><a href=""> Our Services</a></p>
+            <p><a href=""> Privacy Policy</a></p>
+        </div>
+        <div class="footer-item">
+            <h2>Get Help </h2>
+            <p><a href=""> FAQ</a></p>
+            <p><a href=""> Festivals </a></p>
+            <p><a href=""> Places to Visit in Kerala </a></p>
+            <p><a href=""> Places to Visit nearby  </a></p>
+        </div>
+        <div class="footer-item">
+            <h2>Cuisines</h2>
+            <p><a href=""> Breakfast </a></p>
+            <p><a href=""> Lunch </a></p>
+            <p><a href=""> Dinner </a></p>
+            <p><a href=""> Snacks </a></p>
+        </div>
+        <div class="footer-item social" >
+            <h2> Follow Us </h2>
+            <ul style="font-size: 20px;">
+                <li> <i class="fa fa-instagram"></i> </li>
+                <li> <i class="fa fa-linkedin"></i> </li>
+                <li> <i class="fa fa-youtube"></i> </li>
+                <li> <i class="fa fa-twitter"></i> </li>
+            </ul>
+        </div>
+    </div>
+   </body>
+</html>

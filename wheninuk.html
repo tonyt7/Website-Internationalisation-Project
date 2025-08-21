@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+   <head>
+      <meta charset="utf-8">
+      <title>Kerala Cultural Website</title>
+	  <link rel="icon" type="image/png" href="palm_tree3.png"/>
+      <link rel="stylesheet" href="mystyle.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam:wght@500&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	  
+<!-- Include Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	  <style>
+body {
+  background-color: #C9C1B5;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+}
+.card {
+    margin-bottom: 20px; /* Add margin between product cards */
+}
+.card img {
+height:200px;
+
+}
+.price{
+ text-align: center;
+}
+
+
+	</style>  
+   </head>
+
+   <body>
+   <header>
+      <nav class="navbar navbar-expand-md">
+	  
+         <div class="logo" style="font-family: 'Noto Serif Malayalam', serif; font-size:10px">
+		 <img src="image2.png" style="filter: invert(97%) sepia(30%) saturate(342%) hue-rotate(139deg) brightness(103%) contrast(109%);" alt="Logo" width="100" height="80">
+                       കേരള സംസ്കാരം.......
+					   
+         </div>
+         <input type="checkbox" id="click" />
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul class="collapse navbar-collapse navbar-nav ml-auto">
+            <li><a  href="keralaculture.html">Home</a></li>
+            <li><a href="Historyofkerala.html">History</a></li>
+            <li><a href="festivalofkerala.html">Festivals</a></li>
+            <li><a href="artformsofkerala.html">Artforms</a></li>
+            <li><a href="cuisinesofkerala.html">Cuisines</a></li>
+			<li><a href="wheninkerala.html">When in Kerala </a></li>
+            <li><a class="active" >Souvenir</a></li>
+		    
+		 </ul>
+      </nav>
+	  </header>
+	  <br>
+	 <div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <!-- Filter options go here -->
+      <h4>Filter Options</h4>
+	  <h6> Currency
+	  <select id="currencySelect">
+  
+  <option value="GBP">GBP</option>
+  <option value="JPY">JPY</option>
+  <option value="INR">INR</option>
+</select></h6>
+      <!-- Add your filter options HTML code here -->
+    </div>
+    <div class="col-md-9">
+      <!-- Product display section goes here -->
+      <div class="row">
+	  
+        <!-- Product cards go here -->
+        <div class="col-md-4">
+          <div class="card">
+            <!-- Product card content goes here -->
+            <img src="houseboat.jpg" alt="Product 1" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Houseboat Model</h5>
+              
+              <p class="price">£13</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+		 <div class="col-md-4">
+          <div class="card">
+            <!-- Product card content goes here -->
+            <img src="elephantstatue.jpg" alt="Product 1" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Elephant Wooden Statue</h5>
+             
+              <p class="price">£80</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+		 <div class="col-md-4">
+          <div class="card">
+            <!-- Product card content goes here -->
+            <img src="snakeboat.jpg" alt="Product 1" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Kerala Snake Boat</h5>
+           
+              <p class="price">£120</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+		 <div class="col-md-4">
+          <div class="card">
+            <!-- Product card content goes here -->
+            <img src="penholder.jpg" alt="Product 1" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Snake Boat Pen Stand</h5>
+           
+              <p class="price">£6</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+		 <div class="col-md-4">
+          <div class="card">
+            <!-- Product card content goes here -->
+            <img src="aranmulamirror.jpg" alt="Product 1" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Aranmula Mirror</h5>
+             
+              <p class="price">£20</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+		 <div class="col-md-4">
+          <div class="card">
+            <!-- Product card content goes here -->
+            <img src="spiceboat.jpg" alt="Product 1" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Kerala Spice Boat</h5>
+            
+              <p class="price">£25</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+		 <div class="col-md-4">
+          <div class="card">
+            <!-- Product card content goes here -->
+            <img src="Brassstatues.jpg" alt="Product 1" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Brass Statues</h5>
+            
+              <p class="price">£50</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+		 <div class="col-md-4">
+          <div class="card">
+            <!-- Product card content goes here -->
+            <img src="elephanthead.jpg" alt="Product 1" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Wooden Elephant Head</h5>
+           
+              <p class="price">£65</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+		 <div class="col-md-4">
+          <div class="card">
+            <!-- Product card content goes here -->
+            <img src="kathakalistatues.jpg" alt="Product 1" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Wooden Kathakali statue</h5>
+            
+              <p class="price">£40</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+		 <div class="col-md-4">
+          <div class="card">
+            <!-- Product card content goes here -->
+            <img src="fridgemagnets.jpg" alt="Product 1" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Fridge Magnets</h5>
+          
+              <p class="price">£10</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div> <div class="col-md-4">
+          <div class="card">
+            <!-- Product card content goes here -->
+            <img src="keychains.jpg" alt="Product 1" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Key chains </h5>
+           
+              <p class="price">£10</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div> <div class="col-md-4">
+          <div class="card">
+            <!-- Product card content goes here -->
+            <img src="postcards.jpg" alt="Product 1" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Postcards</h5>
+           
+              <p class="price">£5</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat the above code for other products -->
+		<script>
+		const currencySelect = document.getElementById('currencySelect');
+const priceElements = document.querySelectorAll('.price');
+
+currencySelect.addEventListener('change', convertPrices);
+
+function convertPrices() {
+  const selectedCurrency = currencySelect.value;
+
+  priceElements.forEach((priceElement) => {
+    const priceInGBP = parseFloat(priceElement.textContent.substring(1)); // Remove the currency symbol and convert to number
+
+    let convertedPrice;
+
+    if (selectedCurrency === 'INR') {
+      convertedPrice = priceInGBP * 102.34; // Conversion rate for GBP to INR
+    } else if (selectedCurrency === 'JPY') {
+      convertedPrice = priceInGBP * 150.61; // Conversion rate for GBP to JPY
+    } else {
+      convertedPrice = priceInGBP; // No conversion needed for GBP
+    }
+
+    priceElement.textContent = `${getCurrencySymbol(selectedCurrency)}${convertedPrice.toFixed(2)}`;
+  });
+}
+
+function getCurrencySymbol(currencyCode) {
+  if (currencyCode === 'INR') {
+    return '₹';
+  } else if (currencyCode === 'JPY') {
+    return '¥';
+  } else {
+    return '£';
+  }
+}
+		
+		
+		
+		
+		</script>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+</script>
+	  
+	 
+       
+	   
+	   
+	   
+							
+<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+<script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+  
+  <div
+  data-skyscanner-widget="SearchWidget"
+  data-locale="en-GB"
+  data-market="UK"
+  data-currency="GBP"
+  data-font-colour="#012169"
+  data-responsive="true"
+  data-arrow-icon="true"
+  data-colour="#C8102E"
+  data-powered-by-logo-colour="dark"
+  data-origin-name="London"
+  data-destination-name="Kochi"
+  data-button-colour="#012169"
+></div>
+  
+  <div class="footer-section">
+        <div class="footer-item">
+            <h2 style="font-family: 'Noto Serif Malayalam', serif;">കേരള സംസ്കാരം.......</h2>
+            <p><a href=""> About Us</a></p>
+            <p><a href=""> Contact Us</a></p>
+            <p><a href=""> Our Services</a></p>
+            <p><a href=""> Privacy Policy</a></p>
+        </div>
+        <div class="footer-item">
+            <h2>Get Help </h2>
+            <p><a href=""> FAQ</a></p>
+            <p><a href=""> Festivals </a></p>
+            <p><a href=""> Places to Visit in Kerala </a></p>
+            <p><a href=""> Places to Visit nearby  </a></p>
+        </div>
+        <div class="footer-item">
+            <h2>Cuisines</h2>
+            <p><a href=""> Breakfast </a></p>
+            <p><a href=""> Lunch </a></p>
+            <p><a href=""> Dinner </a></p>
+            <p><a href=""> Snacks </a></p>
+        </div>
+        <div class="footer-item social" >
+            <h2> Follow Us </h2>
+            <ul style="font-size: 20px;">
+                <li> <i class="fa fa-instagram"></i> </li>
+                <li> <i class="fa fa-linkedin"></i> </li>
+                <li> <i class="fa fa-youtube"></i> </li>
+                <li> <i class="fa fa-twitter"></i> </li>
+            </ul>
+        </div>
+    </div>
+   </body>
+</html>
